@@ -6,7 +6,9 @@
     "xunit": "2.1.0",
     "xunit.runner.console": "2.0.0",
     "dotnet-test-xunit": "2.2.0-*",
-    "YamlDotNet": "3.9.0"
+    "YamlDotNet": "3.9.0",
+    "System.Net.Http": "4.3.2",
+    "System.Net.Security": "4.3.1"
   },
 
   "buildOptions": {
