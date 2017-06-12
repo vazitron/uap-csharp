@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>C# port of the UAParser</Description>
+    <VersionPrefix>2.2.0</VersionPrefix>
+    <Authors>Søren Enemærke @sorenenemaerke / Atif Aziz @raboof</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>UAParser</AssemblyName>
+    <PackageId>UAParser</PackageId>
+    <PackageTags>uaparser</PackageTags>
+    <PackageProjectUrl>https://github.com/ua-parser/uap-csharp</PackageProjectUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\uap-core\regexes.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.2" />
+  </ItemGroup>
+
+</Project>
